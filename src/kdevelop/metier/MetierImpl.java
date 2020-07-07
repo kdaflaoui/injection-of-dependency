@@ -7,7 +7,7 @@ public class MetierImpl implements IMetier {
 
     @Override
     public double calcul_temperature() {
-        double temperature = dao.getTemperature();
+        double temperature = dao.getTemperature() * 7;
         return temperature;
     }
 
